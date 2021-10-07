@@ -8,6 +8,7 @@ const schemeSchema = yup.object().shape({
   .trim()
   .typeError(errMsg)
   .required(errMsg)
+  .strict()
 })
 
 module.exports = schemeSchema
